@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,900;1,400&family=Roboto&display=swap');
+
+html, body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(215, 215, 215);
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.input-section, .list-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    width: 50vw;
+}
+
+.input-section {
+    background-color: rgb(240, 226, 226);
+}
+
+.list-item {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(240, 226, 226);
+    margin-top: 1em;
+    height: 6em;
+    width: 80%;
+    justify-content: space-around;
+    box-shadow: 1px 2px 6px 0px rgb(0 0 0 / 16%);
+    border-radius: 1em;
+}
+
+.main-input {
+    border-radius: 25px;
+    border: none;
+    outline:none;
+    box-shadow: 1px 2px 6px 0px rgb(0 0 0 / 16%);
+    width: 60%;
+    padding: 14px;
+    margin-top: 1em;
+}
+
+.save-button {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    justify-content: center;
+    margin-top: 10px;
+    background-color: rgb(240, 226, 226);
+    border-radius: 20px;
+    box-shadow: 1px 2px 6px 0px rgb(0 0 0 / 16%);
+    border: none;
+    padding: 10px 20px;
+}
+
+button:hover {
+    background-color: rgb(222, 209, 209);
+}
+
+button:active {
+    background-color: rgb(181, 170, 170);
+}
+
+.top-row, .bottom-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0 1em;
+}
+
+.dropdown-menu {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    border-radius: 1em;
+    box-shadow: 1px 2px 6px 0px rgb(0 0 0 / 16%);
+    width: 60%;
+    padding: 8px 14px;
+    background-color: white;
+}
+
+.dropdown-menu:empty {
+    padding: 0px;
+}
+
+.dropdown-item {
+    display: flex;
+    flex-direction: row;
+    height: 50%;
+    width: 100%;
+    height: 2em;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dropdown-item-button, .list-item-button {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    justify-content: center;
+    background-color: rgb(240, 226, 226);
+    border-radius: 5px;
+    border: none;
+    padding: 0.3em 20px;
+}
+
+.list-item-button {
+    background-color: rgb(215, 215, 215);
+}
+
+.list-item-button:hover {
+    background-color: rgb(207, 207, 207);
+}
+
+.list-item-button:active {
+    background-color: rgb(189, 189, 189);
+}
+
+.salary-input {
+    width: 40%;
+    height: 2em;
+    border-radius: 5px;
+    border: solid 1px;
+    outline: none;
+    border-color: white;
+}
+
+.salary-input::placeholder {
+    color: red;
+}
+
+.modal {
+    background-color: rgb(215, 215, 215);
+    min-width: 100%;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 7;
+}
+
+.dialogue {
+    height: 300px;
+    width: 600px;
+    background-color: rgb(240, 226, 226);
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 80%;
+}
+
+.txt {
+    font-size: 20px;
+    color: #000000;
+    padding: 0 35px;
+    text-align: center;
+}
+
+.robot {
+    width: 7em;
+}
+
+.link {
+    background-color: white; 
+    border: 2px solid rgb(240, 226, 226);
+    border-radius: 15px;
+    color: black; 
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    padding: 1em;
+}
+
+.link:hover {
+    background-color: rgb(167, 149, 149);
+    color: white;
+}
